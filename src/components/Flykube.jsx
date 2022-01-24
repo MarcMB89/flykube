@@ -15,7 +15,7 @@ const FlykubeComponent = () => {
             </section>
             
             <section className='main__container'>
-                <img src={logo} alt="react-logo" />
+                <img className='react-logo' src={logo} alt="react-logo" />
 
                 <section className='input__container'>
                     <input></input>
