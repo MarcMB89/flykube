@@ -7,8 +7,10 @@
 
 .header__container {
     margin: 2rem 0 0 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .main__container {
@@ -27,42 +29,40 @@
     padding: 0 2rem 2rem 2rem;
 }
 
-.button__send {
-    margin: 2rem 0 0 0;
-}
-
-.button__container-active {
+.button__container-left {
     border-right: 1px solid rgb(204, 200, 200);
 }
-.button__active {
-    margin-right: 1rem;
+
+.button__left,
+.button__right {
+    width: 7rem;
+    height: 2.5rem;
 }
 
-.button__inactive {
-    margin-left: 1rem;
-    
-}
-
-.button__active,
-.button__inactive,
+.button__left,
+.button__right,
 .button__send {
     background: rgb(33,131,228);
     background: linear-gradient(90deg, rgba(33,131,228,1) 20%, rgba(70,149,228,1) 49%, rgba(126,177,228,1) 100%);
     color: rgb(247, 241, 241);
-    padding: .7rem 1.9rem;
+    padding: .7rem 2rem;
     border-radius: 0.625rem;
     border: none;
     box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.19);
+    margin: 0 1.5rem;
 }
 
-.button__inactive {
+.button__right {
     opacity: 0.6;
     background: white;
     color: black;
-    cursor: not-allowed;
 }
 
-.input__container {
+.button__send {
+    margin: 2rem 0 0 0;
+}
+
+.form__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,6 +76,10 @@ input {
     border-radius: 0.3rem;
 }
 
+.input__background-green {
+    background-color: green;
+}
+
 .button__send {
     font-weight: bold;
 }
@@ -86,4 +90,3 @@ input {
       flex-direction: row-reverse;
   }
 }
-
